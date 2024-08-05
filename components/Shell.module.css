@@ -8,3 +8,11 @@
       background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
     }
   }
+
+  .inner {
+    height: rem(60px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  

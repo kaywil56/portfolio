@@ -1,6 +1,6 @@
 'use client'
 
-import { AppShell, Burger, Group, UnstyledButton, Title } from '@mantine/core';
+import { AppShell, Burger, Group, UnstyledButton, Title, Container, Button } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './Shell.module.css';
 
@@ -15,29 +15,27 @@ export function Shell({
         <AppShell
             header={{ height: 60 }}
             navbar={{ width: 300, breakpoint: 'sm', collapsed: { desktop: true, mobile: !opened } }}
-            padding="md"
         >
             <AppShell.Header>
-                <Group h="100%" px="md">
-                    <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-                    <Group justify="space-between" style={{ flex: 1 }}>
+                <Container size="md">
+                    <div className={classes.inner}>
                         <Title>Portfolio</Title>
-                        <Group ml="xl" gap={0} visibleFrom="sm">
+                        <Group gap={"xl"} visibleFrom="xs">
                             <UnstyledButton className={classes.control}>About me</UnstyledButton>
                             <UnstyledButton className={classes.control}>Projects</UnstyledButton>
-                            <UnstyledButton className={classes.control}>Get In Contact</UnstyledButton>
+                            <Button className={classes.control}>Get In Contact</Button>
                         </Group>
-                    </Group>
-                </Group>
+                        <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="xs" />
+                    </div>
+                </Container>
             </AppShell.Header>
-
-            <AppShell.Navbar py="md" px={4}>
+            <AppShell.Navbar>
                 <UnstyledButton className={classes.control}>About me</UnstyledButton>
                 <UnstyledButton className={classes.control}>Projects</UnstyledButton>
                 <UnstyledButton className={classes.control}>Get In Contact</UnstyledButton>
             </AppShell.Navbar>
             <AppShell.Main>
-                {children}
+                    {children}
             </AppShell.Main>
         </AppShell>
     );

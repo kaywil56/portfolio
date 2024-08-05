@@ -1,5 +1,13 @@
+import { About } from "@/components/About";
+import { Contact } from "@/components/Contact";
+import { Projects } from "@/components/Projects";
+
 export default function Home() {
   return (
-    <h1>Hello world</h1>
+    <>
+      <About />
+      <Contact />
+      <Projects />
+    </>
   );
 }
