@@ -1,10 +1,32 @@
-import { Title, Container } from "@mantine/core";
+'use client'
+
+import { TypeAnimation } from 'react-type-animation';
+import { Container, Text, useMantineTheme, Group } from "@mantine/core";
 import classes from "./Hero.module.css"
 
 export function Hero() {
+
+    const theme = useMantineTheme()
+
     return <section className={classes.heroSection}>
-    <Container w={"lg"}>
-        <Title size={"h1"}>Portfolio</Title>
-    </Container>
-</section>
+        <Container size={"md"} className={classes.container}>
+            <div>
+                <Text className={classes.heroText} tt={"uppercase"} fw={900} ta={"center"} fz={{ base: 50, sm: 70 }}>I'm Kaylem Williams</Text>
+                <Group align='center' justify='center' >
+                    <TypeAnimation
+                        sequence={[
+                            'A Graduate in Information Technology.',
+                            1000,
+                            'Based in New Zealand.',
+                            1000
+                        ]}
+                        wrapper="span"
+                        cursor={true}
+                        repeat={Infinity}
+                        style={{ fontSize: theme.fontSizes.md, display: 'inline-block' }}
+                    />
+                </Group>
+            </div>
+        </Container>
+    </section>
 }

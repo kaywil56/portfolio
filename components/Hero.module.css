@@ -1,5 +1,12 @@
 .heroSection{
-    height: 100vh;
-    weight: 100vw;
-    margin-top: rem(-60px);
+    height: calc(100vh - rem(120px));
+    /* height: 100vh; */
+    /* margin-top: rem(-60px); */
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    height: 100%;
+    max-width:;
 }
