@@ -15,4 +15,14 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+
+  .logo{
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, rgb(76, 110, 245) 0%, rgb(21, 170, 191) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }

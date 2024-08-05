@@ -24,6 +24,7 @@ export default function RootLayout({
       </head>
       <body>
         <MantineProvider defaultColorScheme="dark" theme={{
+          primaryColor: "indigo",
           fontFamily: `${ roboto.style.fontFamily}, sans-serif`, 
           fontFamilyMonospace: 'Monaco, Courier, monospace',
           headings: { fontFamily: `${ montserrat.style.fontFamily}, sans-serif` },
