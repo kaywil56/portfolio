@@ -30,7 +30,7 @@ export function Shell({
                         <Group gap={"xl"} visibleFrom="xs">
                             <UnstyledButton className={classes.control}>About me</UnstyledButton>
                             <UnstyledButton className={classes.control}>Projects</UnstyledButton>
-                            <Button className={classes.control}>Get In Contact</Button>
+                            <Button variant="outline" radius="xs">Get in Contact</Button>
                         </Group>
                         <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="xs" />
                     </div>
