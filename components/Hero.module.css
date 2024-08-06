@@ -12,13 +12,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 .wrapper {
-	font-size: 20vmin;
+	font-size: rem(125px);
 	height: 2em;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	mix-blend-mode: screen;
+
+	  @media (max-width: $mantine-breakpoint-md) {
+		font-size: rem(100px);
+	  }
+
+	  @media (max-width: $mantine-breakpoint-sm) {
+		font-size: rem(75px);
+	  }
 	
 	&.invert {
 		span {
@@ -55,12 +63,12 @@
 		}
 
 		&:first-child {
-			transform: translate(-.300em, -.40em);
+			transform: translate(-.75em, -.40em);
 		}
 
 		&:last-child {
 			--color: #b6acff;
-			transform: translate(.300em, .40em);
+			transform: translate(.75em, .40em);
 		}
 	}
 }

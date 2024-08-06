@@ -4,6 +4,7 @@ import { IconBrandGithub, IconMail } from '@tabler/icons-react';
 import { AppShell, Burger, Group, UnstyledButton, Stack, Title, Text, Container, Button, ActionIcon } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './Shell.module.css';
+import ScrollIntoView from 'react-scroll-into-view'
 
 export function Shell({
     children,
@@ -28,9 +29,21 @@ export function Shell({
                             variant="gradient"
                         >Kaylem.</Title>
                         <Group gap={"xl"} visibleFrom="xs">
-                            <UnstyledButton className={classes.control}>About me</UnstyledButton>
-                            <UnstyledButton className={classes.control}>Projects</UnstyledButton>
-                            <Button variant="outline" radius="xs">Get in Contact</Button>
+                            <ScrollIntoView
+                                alignToTop={true}
+                                selector='#about'>
+                                <UnstyledButton className={classes.control}>About me</UnstyledButton>
+                            </ScrollIntoView>
+                            <ScrollIntoView
+                                alignToTop={true}
+                                selector='#projects'>
+                                <UnstyledButton className={classes.control}>Projects</UnstyledButton>
+                            </ScrollIntoView>
+                            <ScrollIntoView
+                                alignToTop={true}
+                                selector='#contact'>
+                                <Button variant="outline" radius="xs">Get in Contact</Button>
+                            </ScrollIntoView>
                         </Group>
                         <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="xs" />
                     </div>

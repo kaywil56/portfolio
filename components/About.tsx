@@ -1,7 +1,9 @@
+'use client'
+
 import { Container, Title, Avatar, Text, Group, SimpleGrid, Stack } from "@mantine/core";
 
 export function About() {
-    return <Container mb={120} size={"md"}>
+    return <Container style={{ scrollMarginTop: "120px" }} id="about" mb={120} size={"md"}>
         <Title mb={"xl"} order={2} size={"h3"}>About Me</Title>
         <Group align="flex-start" gap={"xl"} wrap="nowrap">
             <Avatar size={"xl"}>KW</Avatar>
