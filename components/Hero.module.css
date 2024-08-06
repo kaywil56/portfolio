@@ -55,12 +55,12 @@
 		}
 
 		&:first-child {
-			transform: translate(-.255em, -.40em);
+			transform: translate(-.300em, -.40em);
 		}
 
 		&:last-child {
 			--color: #b6acff;
-			transform: translate(.255em, .40em);
+			transform: translate(.300em, .40em);
 		}
 	}
 }

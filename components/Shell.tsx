@@ -1,7 +1,7 @@
 'use client'
 
 import { IconBrandGithub, IconMail } from '@tabler/icons-react';
-import { AppShell, Burger, Group, UnstyledButton, Title, Text, Container, Button, ActionIcon } from '@mantine/core';
+import { AppShell, Burger, Group, UnstyledButton, Stack, Title, Text, Container, Button, ActionIcon } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './Shell.module.css';
 
@@ -37,9 +37,11 @@ export function Shell({
                 </Container>
             </AppShell.Header>
             <AppShell.Navbar>
-                <UnstyledButton className={classes.control}>About me</UnstyledButton>
-                <UnstyledButton className={classes.control}>Projects</UnstyledButton>
-                <UnstyledButton className={classes.control}>Get In Contact</UnstyledButton>
+                <Stack p={"md"} gap={"sm"}>
+                    <UnstyledButton className={classes.control}>About me</UnstyledButton>
+                    <UnstyledButton className={classes.control}>Projects</UnstyledButton>
+                    <UnstyledButton className={classes.control}>Get In Contact</UnstyledButton>
+                </Stack>
             </AppShell.Navbar>
             <AppShell.Main>
                 {children}
