@@ -1,7 +1,7 @@
 import { About } from "@/components/About";
-import { Contact } from "@/components/Contact";
 import { Projects } from "@/components/Projects";
 import { Hero } from "@/components/Hero";
+import { Contact } from "@/components/Contact";
 
 export default function Home() {
   return (

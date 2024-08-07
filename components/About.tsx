@@ -8,7 +8,7 @@ export function About() {
         <Group align="flex-start" gap={"xl"} wrap="nowrap">
             <Avatar size={"xl"}>KW</Avatar>
             <Stack>
-                <Text size="sm">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an, cule dicta iriure at. Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has, ei quodsi tacimates sapientem sed, pri zril ubique ut. Te cule tation munere noluisse. Enim torquatos ne pri, eum mollis salutandi corrumpit et, fugit apeirian duo ad.</Text>
+                <Text size="sm">I am a 24-year-old IT graduate with a passion for applying my technical knowledge and skills in real-world scenarios. I have a particular interest in web development, where I enjoy creating dynamic and user-friendly websites. Outside of my professional pursuits, I have a strong love for music, which inspires and energizes me in all aspects of my life.</Text>
                 <SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }}
                     spacing={{ base: 10, sm: 'xl' }}
                     verticalSpacing={{ base: 'lg', sm: 'xl' }}
@@ -24,18 +24,6 @@ export function About() {
                     <Group>
                         <Text c={"indigo"} size="sm">Age: </Text>
                         <Text size="sm">24</Text>
-                    </Group>
-                    <Group>
-                        <Text c={"indigo"} size="sm">Location: </Text>
-                        <Text size="sm">New Zealand</Text>
-                    </Group>
-                    <Group>
-                        <Text c={"indigo"} size="sm">Location: </Text>
-                        <Text size="sm">New Zealand</Text>
-                    </Group>
-                    <Group>
-                        <Text c={"indigo"} size="sm">Location: </Text>
-                        <Text size="sm">New Zealand</Text>
                     </Group>
                 </SimpleGrid>
             </Stack>

@@ -12,7 +12,20 @@ export function Projects() {
             <div>
                 <Box mb={"sm"} bg={"gray"} h={200} w={"100%"}></Box>
                 <Group mb={"sm"} justify="space-between" align="center">
-                    <Title order={3} size={"h4"}>Project 1</Title>
+                    <Title order={3} size={"h4"}>Streetle</Title>
+                    <Group align="center" gap={"xs"}>
+                        <IconBrandGithub color={theme.colors.indigo[5]} size={18} />
+                        <Anchor size="sm" underline="hover" href="https://github.com/kaywil56/streetle" target="_blank">
+                            View Code
+                        </Anchor>
+                    </Group>
+                </Group>
+                <Text size="sm">Streetle is a daily game inspired by GeoGuessr. It's built with the Google Street View API and the React front-end framework. The game starts with you being placed in a random location in the world, where you have to guess where you are. After each guess, you receive information about your guess and the correct location, including direction, distance, and other details.</Text>
+            </div>
+            <div>
+                <Box mb={"sm"} bg={"gray"} h={200} w={"100%"}></Box>
+                <Group mb={"sm"} justify="space-between" align="center">
+                    <Title order={3} size={"h4"}>Poker Game</Title>
                     <Group align="center" gap={"xs"}>
                         <IconBrandGithub color={theme.colors.indigo[5]} size={18} />
                         <Anchor size="sm" underline="hover" href="https://mantine.dev/" target="_blank">
@@ -20,7 +33,7 @@ export function Projects() {
                         </Anchor>
                     </Group>
                 </Group>
-                <Text size="sm">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an, cule dicta iriure at. Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has, ei quodsi tacimates sapientem sed, pri zril ubique ut. Te cule tation munere noluisse. Enim torquatos ne pri, eum mollis salutandi corrumpit et, fugit apeirian duo ad.</Text>
+                <Text size="sm">Streetle is a daily game inspired by GeoGuessr. It's built with the Google Street View API and the React front-end framework. The game starts with you being placed in a random location in the world, where you have to guess where you are. After each guess, you receive information about your guess and the correct location, including direction, distance, and other details.</Text>
             </div>
         </SimpleGrid>
     </Container>
