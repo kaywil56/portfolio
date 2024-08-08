@@ -11,7 +11,6 @@ import streetle_how_to_play from "../public/streetle_how_to_play.png"
 import streetle_1 from "../public/streetle_1.png"
 import streetle_2 from "../public/streetle_2.png"
 
-
 export function Projects() {
     const theme = useMantineTheme()
 
