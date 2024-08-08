@@ -3,6 +3,7 @@ import { Montserrat, Roboto_Mono } from "next/font/google";
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import { Shell } from "@/components/Shell";
 import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 const roboto = Roboto_Mono({ subsets: ['latin'] })
