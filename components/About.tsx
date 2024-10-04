@@ -8,7 +8,7 @@ export function About() {
         <Group align="flex-start" gap={"xl"} wrap="nowrap">
             <Avatar size={"xl"}>KW</Avatar>
             <Stack>
-                <Text size="sm">I am a 24-year-old IT graduate with a passion for applying my technical knowledge and skills in real-world scenarios. I have a particular interest in web development, where I enjoy creating dynamic and user-friendly websites. Outside of my professional pursuits, I have a strong passion for music.</Text>
+                <Text size="sm">As an IT graduate, I possess a strong desire to learn and expand my knowledge in the field. Problem-solving is a passion of mine, and I approach challenges with determination and perseverance. My enthusiasm for IT fuels my motivation to get the job done efficiently and effectively. My personality is friendly and easy-going, and I can get along with everyone.</Text>
                 <SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }}
                     spacing={{ base: 10, sm: 'xl' }}
                     verticalSpacing={{ base: 'lg', sm: 'xl' }}
