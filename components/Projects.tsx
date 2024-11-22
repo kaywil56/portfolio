@@ -10,6 +10,9 @@ import poker_session from "../public/poker_session.png"
 import streetle_how_to_play from "../public/streetle_how_to_play.png"
 import streetle_1 from "../public/streetle_1.png"
 import streetle_2 from "../public/streetle_2.png"
+import cs_1 from "../public/cs_01.png"
+import cs_2 from "../public/cs_02.png"
+import cs_3 from "../public/cs_03.png"
 
 export function Projects() {
     const theme = useMantineTheme()
@@ -17,6 +20,35 @@ export function Projects() {
     return <Container style={{ scrollMarginTop: "120px" }} id="projects" mb={120} size={"md"}>
         <Title mb={"xl"} order={2} size={"h3"}>Projects</Title>
         <SimpleGrid verticalSpacing={"xl"} spacing={"lg"} cols={{ base: 1, lg: 2 }}>
+            <div>
+                <Carousel mb={"sm"} height={250}>
+                    <Carousel.Slide>
+                        <div style={{ position: "relative", height: "250px", width: "100%" }}>
+                            <Image objectFit="contain" fill alt="Poker Game" src={cs_1} />
+                        </div>
+                    </Carousel.Slide>
+                    <Carousel.Slide>
+                        <div style={{ position: "relative", height: "250px", width: "100%" }}>
+                            <Image objectFit="contain" fill alt="Poker Session" src={cs_2} />
+                        </div>
+                    </Carousel.Slide>
+                    <Carousel.Slide>
+                        <div style={{ position: "relative", height: "250px", width: "100%" }}>
+                            <Image objectFit="contain" fill alt="Poker Login" src={cs_3} />
+                        </div>
+                    </Carousel.Slide>
+                </Carousel>
+                <Group mb={"sm"} justify="space-between" align="center">
+                    <Title order={3} size={"h4"}>Game of Life Generative Sequencer</Title>
+                    <Group align="center" gap={"xs"}>
+                        <IconBrandGithub color={theme.colors.indigo[5]} size={18} />
+                        <Anchor size="sm" underline="hover" href="https://github.com/kaywil56/Conway-s-Generative-Sequencer-" target="_blank">
+                            View Code
+                        </Anchor>
+                    </Group>
+                </Group>
+                <Text size="sm">A musical sequencer that generates patterns based on Conway's Game of Life cellular automaton, implemented in the Godot game engine. The system transforms the classic 2D grid of cells into a dynamic musical instrument where living cells trigger musical events.</Text>
+            </div>
             <div>
                 <Carousel mb={"sm"} height={250}>
                     <Carousel.Slide>
